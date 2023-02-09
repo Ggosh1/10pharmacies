@@ -8,7 +8,7 @@ from yx import get_scale
 search_api_server = "https://search-maps.yandex.ru/v1/"
 api_key = "dda3ddba-c9ea-4ead-9010-f43fbc15c6e3"
 
-address_ll = "37.588392,55.734036"
+address_ll = ','.join([sys.argv[1], sys.argv[2]])
 
 search_params = {
     "apikey": api_key,
